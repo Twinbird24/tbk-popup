@@ -20,17 +20,20 @@ body {
   top: 0px;
   left: 0px;
   background: rgba(0, 0, 0, 0.75);
-  z-index: 99;
+  z-index: 100;
+  overflow-y: scroll;
 }
 #pop-up-container #pop-up {
+  max-width: 830px;
   width: 65%;
   background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 101;
   font-family: 'Roboto', sans-serif;
+  margin: 50px 0;
   /*close button */
   /* top section */
   /* bottom section */
@@ -46,7 +49,8 @@ body {
   padding-bottom: 50px;
 }
 #pop-up-container #pop-up div:nth-of-type(2) p {
-  margin: 10px;
+  margin: 15px;
+  z-index: 102;
 }
 #pop-up-container #pop-up div:nth-of-type(2) p span {
   color: #9f173d;
@@ -57,8 +61,15 @@ body {
 }
 #pop-up-container #pop-up div:nth-of-type(2) p:nth-of-type(3) {
   font-family: 'Times New Roman', cursive;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) p:nth-of-type(4) {
+  display: inline-block;
+  width: 65%;
+  margin-bottom: 0;
 }
 #pop-up-container #pop-up div:nth-of-type(2) hr {
   background-color: #c40045;
@@ -70,6 +81,18 @@ body {
 #pop-up-container #pop-up div:nth-of-type(2) ul {
   display: inline-block;
   text-align: left;
+  list-style: none;
+}
+#pop-up-container #pop-up div:nth-of-type(2) ul li:after {
+  content: '';
+  height: 3px;
+  width: 3px;
+  background: #9f173d;
+  display: block;
+  transform: rotate(45deg);
+  position: relative;
+  left: -20px;
+  bottom: 12px;
 }
 #pop-up-container #pop-up div:nth-of-type(3) {
   color: white;
@@ -78,6 +101,12 @@ body {
 }
 #pop-up-container #pop-up div:nth-of-type(3) p:nth-of-type(1) {
   font-family: 'Times New Roman', cursive;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+#pop-up-container #pop-up div:nth-of-type(3) p:nth-of-type(2) {
+  font-size: 14px;
+  margin: 0 0 20px 0;
 }
 #pop-up-container #pop-up div:nth-of-type(3) form {
   width: 60%;
@@ -133,4 +162,22 @@ body {
 #pop-up-container #pop-up div:nth-of-type(3) form :-moz-placeholder {
   /* Firefox 18- */
   color: black;
+}
+#pop-up-container #pop-up #top-cube {
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  width: 100px;
+  height: 300px;
+  border: 8px solid #f5f5f5;
+  transform: translateX(50%);
+}
+#pop-up-container #pop-up #bottom-cube {
+  position: absolute;
+  top: 97%;
+  right: 50%;
+  width: 90px;
+  height: 50px;
+  border: 8px solid #f5f5f5;
+  transform: translateX(50%);
 }
