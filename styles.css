@@ -1,6 +1,118 @@
-#pop-up {
-  width: 50%;
-  height: 100px;
-  background-color: black;
+/* In a terminal, run "lessc styles.less > styles.css" to have this .less file compiled to regular css before deploying */
+/*==============================*/
+/* Website Styles & Fonts */
+/*==============================*/
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+body {
+  margin: 0;
+}
+/*==============================*/
+/* Popup Styles */
+/*==============================*/
+#pop-up-container {
+  text-align: center;
   display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 99;
+}
+#pop-up-container #pop-up {
+  width: 65%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-family: 'Roboto', sans-serif;
+  /*close button */
+  /* top section */
+  /* bottom section */
+}
+#pop-up-container #pop-up div:nth-of-type(1) p {
+  color: #797979;
+  text-align: right;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 20px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) p {
+  margin: 10px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) p span {
+  color: #9f173d;
+}
+#pop-up-container #pop-up div:nth-of-type(2) p:nth-of-type(2) {
+  font-family: 'Tangerine', cursive;
+  font-size: 22px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) p:nth-of-type(3) {
+  font-family: 'Times New Roman', cursive;
+  font-size: 26px;
+  line-height: 24px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) hr {
+  background-color: #c40045;
+  border: 0;
+  height: 2px;
+  width: 80px;
+}
+#pop-up-container #pop-up div:nth-of-type(2) ul {
+  display: inline-block;
+  text-align: left;
+}
+#pop-up-container #pop-up div:nth-of-type(3) {
+  color: white;
+  background-color: #9f173d;
+}
+#pop-up-container #pop-up div:nth-of-type(3) p:nth-of-type(1) {
+  font-family: 'Times New Roman', cursive;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form {
+  width: 50%;
+  margin: 0 auto;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form input {
+  height: 30px;
+  padding: 5px 10px;
+  border: 0;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form input[type=submit] {
+  padding: 20px;
+  line-height: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', cursive;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form input[type=checkbox] {
+  float: left;
+  margin-top: 10px;
+  -webkit-appearance: none;
+  border: 1px solid white;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form p {
+  text-align: left;
+  margin: 15px 0 0 25px;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+#pop-up-container #pop-up div:nth-of-type(3) form :-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
 }
