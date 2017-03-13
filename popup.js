@@ -22,8 +22,23 @@ function startPopUp() {
 		$('#close-btn>p').click(function() {
 			$('#pop-up-container').fadeOut('fast');
 		});
+
+		// so that we can hit enter to check the checkbox
+		$('input:checkbox').keypress(function(e){
+		    if((e.keyCode ? e.keyCode : e.which) == 13){
+		        $(this).trigger('click');
+		    }
+		});
+
+		// so that we can hit enter to close :( this beautiful pop-up
+		$('#close-btn>p').keypress(function(e){
+		    if((e.keyCode ? e.keyCode : e.which) == 13){
+		        $(this).trigger('click');
+		    }
+		});
+
 	}), 1000);
 
 	// set local storage to prevent future pop-ups
-	localStorage.setItem('popUpViewed', true)
+	//localStorage.setItem('popUpViewed', true)
 }
