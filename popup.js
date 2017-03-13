@@ -37,7 +37,7 @@ function startPopUp() {
 		    }
 		});
 
-	}), 1000);
+	}), 3000);
 
 	// set local storage to prevent future pop-ups
 	localStorage.setItem('popUpViewed', true)
