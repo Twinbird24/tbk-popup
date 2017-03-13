@@ -37,10 +37,11 @@ body {
 }
 #pop-up-container #pop-up #close-btn p {
   color: #797979;
-  text-align: right;
+  float: right;
   font-size: 12px;
   margin: 0;
   padding: 10px 20px;
+  cursor: pointer;
 }
 #pop-up-container #pop-up #top-section {
   padding-bottom: 50px;
@@ -54,6 +55,7 @@ body {
 }
 #pop-up-container #pop-up #top-section p:nth-of-type(1) {
   position: relative;
+  margin-top: 50px;
 }
 #pop-up-container #pop-up #top-section p:nth-of-type(2) {
   font-family: 'Tangerine', cursive;
@@ -197,4 +199,25 @@ body {
 }
 #pop-up-container #pop-up #shavings img {
   width: 130px;
+}
+/* Popup responsive style changes*/
+@media only screen and (max-width: 800px) {
+  #pop-up-container #pop-up {
+    width: 95%;
+  }
+  #chisel {
+    display: none;
+  }
+  #shavings {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  form input {
+    display: block;
+    margin: 2px auto;
+  }
+  form input[type=checkbox] {
+    margin-left: 25% !important;
+  }
 }
