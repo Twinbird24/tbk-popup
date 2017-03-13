@@ -40,5 +40,5 @@ function startPopUp() {
 	}), 1000);
 
 	// set local storage to prevent future pop-ups
-	//localStorage.setItem('popUpViewed', true)
+	localStorage.setItem('popUpViewed', true)
 }
