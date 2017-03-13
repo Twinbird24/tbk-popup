@@ -110,7 +110,7 @@ body {
   margin: 0 0 20px 0;
 }
 #pop-up-container #pop-up #bottom-section form {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 #pop-up-container #pop-up #bottom-section form input {
@@ -129,7 +129,7 @@ body {
 #pop-up-container #pop-up #bottom-section form input[type=checkbox] {
   cursor: pointer;
   float: left;
-  margin: 10px 0 0 60px;
+  margin: 10px 0 0 27%;
   -webkit-appearance: none;
   border: 1px solid white;
   height: 3px;
@@ -139,12 +139,12 @@ body {
   content: '\2714';
   color: white;
   position: absolute;
-  margin: -13px 0 0 -4px;
+  margin: -12px 0 0 -4px;
 }
 #pop-up-container #pop-up #bottom-section form p:nth-of-type(1) {
-  width: 65%;
+  width: 40%;
   text-align: left;
-  margin: 8px 0 0 80px;
+  margin: 8px 0 0 29.5%;
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
 }
@@ -181,4 +181,20 @@ body {
   height: 50px;
   border: 8px solid #f5f5f5;
   transform: translateX(50%);
+}
+#pop-up-container #pop-up #chisel {
+  position: absolute;
+  top: 20%;
+  right: 92%;
+}
+#pop-up-container #pop-up #chisel img {
+  width: 400px;
+}
+#pop-up-container #pop-up #shavings {
+  position: absolute;
+  top: 10%;
+  right: -10%;
+}
+#pop-up-container #pop-up #shavings img {
+  width: 130px;
 }
