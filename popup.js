@@ -18,8 +18,8 @@ function startPopUp() {
 		function parallaxScroll() {
 			var scrolledY = $('#pop-up-container').scrollTop();
 			// if you want to changed scroll speed, modify the multiplier (aka the *0.2 and *-0.2 numbers)
-			$('#chisel').css('top','+20' - (((scrolledY)*0.2)) + '%');
-			$('#shavings').css('top','+10' - (((scrolledY)*-0.2)) + '%');
+			$('#chisel').css('top','+20' - (((scrolledY)*0.15)) + '%');
+			$('#shavings').css('top','+10' - (((scrolledY)*-0.15)) + '%');
 		}
 		// close the pop-up
 		$('#close-btn>p').click(function() {
