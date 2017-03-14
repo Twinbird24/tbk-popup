@@ -8,6 +8,9 @@ function startPopUp() {
 	setTimeout( (function() {
 		$('#pop-up-container').fadeIn('fast'); // fade in pop-up
 
+		// this will stop the annoying scrolling of the body when trying to scroll the popup
+		$('html, body').css('overflow', 'hidden'); 
+
 		// check if pop-up is scrolled and run associated handler
 		$('#pop-up-container').bind('scroll', function(e) {
 			parallaxScroll();
@@ -21,6 +24,9 @@ function startPopUp() {
 		// close the pop-up
 		$('#close-btn>p').click(function() {
 			$('#pop-up-container').fadeOut('fast');
+
+			// restore default page scrolling
+			$('html, body').css('overflow', 'initial'); 
 		});
 
 		// so that we can hit enter to check the checkbox
