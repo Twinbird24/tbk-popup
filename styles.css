@@ -50,6 +50,7 @@ body {
 }
 #pop-up-container #pop-up #top-section {
   padding-bottom: 50px;
+  background-color: #fff;
 }
 #pop-up-container #pop-up #top-section p {
   margin: 15px;
