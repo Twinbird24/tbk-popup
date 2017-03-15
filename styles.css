@@ -24,6 +24,10 @@ body {
   overflow-y: scroll;
 }
 #pop-up-container #pop-up {
+  border-top: 60px solid transparent;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
   max-width: 830px;
   width: 65%;
   background-color: white;
@@ -102,6 +106,10 @@ body {
   color: white;
   background-color: #9f173d;
   padding: 30px 0 80px 0;
+  border-bottom: 50px solid transparent;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 #pop-up-container #pop-up #bottom-section p:nth-of-type(1) {
   font-family: 'Times New Roman', cursive;
