@@ -219,6 +219,23 @@ body {
 			}
 		}
 	}
+
+	#white-border {
+		max-width: 830px;
+		height: 1016px;
+		width: 65%;
+		background-color: transparent;
+		position: relative;
+		z-index: 101;
+		top: 0;
+		left: 0;
+		bottom: 0px;
+		right: 0;
+		margin: 52px auto;
+		border: 1px solid white;
+		padding: 8px;
+	}
+
 }
 /* Popup responsive style changes*/
 @media only screen and (max-width: 800px) {
@@ -246,4 +263,35 @@ body {
 		}
 	}
 
+}
+@media only screen and (max-width: 635px) {
+	#pop-up-container #white-border {
+		display: none;
+	}
+}
+@media only screen and (max-width: 920px) {
+	#pop-up-container #white-border {
+		height: 1034px;
+	}
+}
+@media only screen and (max-width: 912px) {
+	#pop-up-container #white-border {
+		height: 1047px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	#pop-up-container #white-border {
+		height: 1016px;
+		width: 94.6%;
+	}
+}
+@media only screen and (min-width: 1194px) {
+	#pop-up-container #white-border {
+		height: 1003px;
+	}
+}
+@media only screen and (min-width: 1261px) {
+	#pop-up-container #white-border {
+		height: 984px;
+	}
 }
